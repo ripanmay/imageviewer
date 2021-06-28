@@ -1,59 +1,26 @@
-.posts-card-container {
-    margin: 1% 10% 1% 10%;
+.home-item-main-container{
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
 }
-
-.post-card {
-    margin: 10px;
-    width: auto;
-    height: fit-content;
+.home-item-profile-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
 }
-
-.avatar{
-    border: 1px solid whitesmoke;
+.home-item-profile-head{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
 }
-
-.post-image {
-    height: 500px;
-    width: 500px;
-    margin: 5px;
+.horizpontal-rule{
+  margin:10px;
+  background-color:"#FF5722"
 }
-
-.horizontal-rule {
-    border-top: 2px solid lightgray;
+.row{
+  display: flex;
+  flex-direction: row;
 }
-
-.post-caption {
-    overflow: hidden;
-    text-overflow: clip;
-    margin-top: 5px;
-}
-
-.post-tags {
-    color: blue;
-}
-
-.likes {
-    display: flex;
-    flex-direction: row;
-}
-
-.post-comment {
-    display: flex;
-}
-
-.post-comment-form-control {
-    width: 550px;
-}
-
-.add-button {
-    cursor: pointer;
-    margin-top: 10px;
-    margin-left: 10px;
-}
-
-.divider{
-    margin-top: 3px;
-    padding-top: 1px;
-    padding-bottom: 1px;
-}
-

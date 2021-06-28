@@ -1,18 +1,15 @@
-import React, {Component, Fragment} from 'react'
-import './App.css';
-//Router import for redirection.
-import {Route, Switch} from "react-router-dom";
-//Imports of different pages in the application
-import Login from "./screens/login/Login";
+import React from 'react'
+import { Switch, Route } from 'react-router-dom'
+import Home from './screens/home/Home';
+import Login from './screens/login/Login';
+import Profile from './screens/profile/Profile';
 
-class App extends Component {
-  render() {
-      return <Fragment>
-          <Switch>
-              <Route exact path='/' render={(props) => <Login {...props}/>}/>
-          </Switch>
-      </Fragment>
-  }
-}
+const App = () => (
+  <Switch>
+    <Route exact path='/' render={({history}, props) => <Login {...props} history={history}/>} />
+    <Route exact path='/home' render={({history}, props) => <Home {...props} history={history}/>} />
+    <Route exact path='/profile' render={({history}, props) => <Profile {...props} history={history}/>}/>
+  </Switch>
+)
 
 export default App;
